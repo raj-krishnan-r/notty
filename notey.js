@@ -1,5 +1,5 @@
-var notty = {};
-notty = 
+var notey = {};
+notey = 
         {
     alert:function(msg)
     {
