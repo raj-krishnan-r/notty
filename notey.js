@@ -9,12 +9,12 @@ notey =
             {
         return document.getElementById(sel.substring(1,sel.length));               
             }
+    },
+            post:function(data)
+    {
+               console.log(Object.keys(data));
     }
         };
-         datap({apple:"Fruit",car:"vehicle"});
- function datap(ob)
- {
-     console.log(Object.keys(ob));
- }
+
 
         
