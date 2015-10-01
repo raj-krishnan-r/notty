@@ -3,17 +3,18 @@
     <head>
         <title>Notey Sample Run</title>
         <script src="notey.js"></script>
+        <link rel="stylesheet" href="raid.css"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
         <div id="ele">Watch Console Log !</div>
-
+        <button id="some">This is Button</button>
         <script>
-        //notey.post({apple:"Fruit",car:"vehicle"});    
       notey.post('server.php',{fruit:"apple",vehicle:"car",person:"I"},function (data)
         {
-            document.write(data.responseText);
         });
+//notey.notify('index.html',{iframe:true});
+notey.sel('#some').click();
 
         </script>
             
