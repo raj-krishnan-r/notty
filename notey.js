@@ -29,9 +29,7 @@ notey =
                    http.open("post",url,true);
                     http.send(fd);
                     http.onreadystatechange = function() {//Call a function when the state changes.
-	if(http.readyState == 4 && http.status == 200) {
-		callback(http);
-	}
+		if(http.readyState === 4) {callback(http);}
 }
     },
             get:function(url,callback)
@@ -39,13 +37,7 @@ notey =
         var http = new XMLHttpRequest();
 http.open("GET", url, true);
 http.onreadystatechange = function() {
-	if(http.readyState === 4 && http.status ===200) {
-                callback(http);
-	}
-        	if(http.readyState === 4 && http.status ===404) {
-                callback(http);
-	}
-}
+if(http.readyState === 4) {callback(http);}}
 http.send(null);
     }
         };
