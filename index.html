@@ -10,7 +10,10 @@
 
         <script>
         //notey.post({apple:"Fruit",car:"vehicle"});    
-        alert(notey.get('index.html'));  
+      notey.post('server.php',{fruit:"apple",vehicle:"car",person:"I"},function (data)
+        {
+            document.write(data.responseText);
+        });
 
         </script>
             
